@@ -12,7 +12,7 @@ class ItemSelector extends Component {
     // Methods to retrun 3 boxes
     productGenerator = (items) => {
         return items.map( item => (
-            <div>{item.id}</div>
+            <div>{item.title}</div>
         ))
     }
 
@@ -22,7 +22,7 @@ class ItemSelector extends Component {
         return(
             <div className="box">
                 <h3>I am product selector component & below are my props</h3>
-                {this.productGenerator(this.props.rings)}
+                {this.productGenerator(this.props.items)}
             </div>
         )
     }

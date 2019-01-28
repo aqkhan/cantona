@@ -14,7 +14,8 @@ const Index = ({ rings, stones }) =>
     </Head>
     <div id="container">
         <h2>Product Customizer</h2>
-        <ItemSelector rings={rings} stones={stones} />
+        <ItemSelector items={rings} />
+        <ItemSelector items={stones} />
     </div>
     </div>
     Index.getInitialProps = async() => {
